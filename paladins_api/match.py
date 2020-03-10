@@ -3,6 +3,7 @@ from paladins_api.constants import NUMBER_OF_BANS
 
 class Match:
     def __init__(self, data):
+        # data is json response for get match
         self.data = data
         self.number_of_players = len(self.data)
 
